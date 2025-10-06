@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TerraNova Simulation</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
+    <link href="css/templatemo-diagoona.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/821b5b3fa4.js" crossorigin="anonymous"></script>
+<!--
+
+TemplateMo 550 Diagoona
+
+https://templatemo.com/tm-550-diagoona
+
+-->
+</head>
+
+<body>
+    <div class="tm-container">        
+        <div>
+            <div class="tm-row pt-4">
+                <div class="tm-col-left">
+                    <div class="tm-site-header media">
+                        <i class="fa-solid fa-building-wheat fa-3x mt-1 tm-logo" style="color: #1d5927;"></i>
+                        <div class="media-body">
+                            <h1 class="tm-sitename text-uppercase">TerraNova</h1>
+                            <p class="tm-slogon">Made to grow together</p>
+                        </div>        
+                    </div>
+                </div>
+                <div class="tm-col-right">
+                    <nav class="navbar navbar-expand-lg" id="tm-main-nav">
+                        <button class="navbar-toggler toggler-example mr-0 ml-auto" type="button" 
+                            data-toggle="collapse" data-target="#navbar-nav" 
+                            aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span><i class="fas fa-bars"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
+                            <ul class="navbar-nav text-uppercase">
+                                <li class="nav-item">
+                                    <a class="nav-link tm-nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link tm-nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link tm-nav-link" href="services.html">Environment</a>
+                                </li>                            
+                                <li class="nav-item">
+                                    <a class="nav-link tm-nav-link" href="contact.html">Sensors</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link tm-nav-link" href="app.html">App</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link tm-nav-link" href="simulation.html">Simulation <span class="sr-only">(current)</span></a>
+                                </li>
+                            </ul>                            
+                        </div>                        
+                    </nav>
+                </div>
+            </div>
+            
+            <div class="tm-row">
+                <div class="tm-col-left"></div>
+                <main class="tm-col-right">
+                    <section class="tm-content">
+                        <h1>General scenario</h1>
+                        <p class="mb-5"> Imagine an intelligent system that receives data from sensors in different countries and uses AI (such as that in the project) to analyze problems in the territory and provide sustainable solutions.</p>
+                        <hr class="mb-5">
+                        <h2 class="mb-5 tm-content-title">PHASE 1 – Underdeveloped countries</h2>
+                        <h5>Problem</h5>
+                        <p class="mb-5">Lack of clean water, soil erosion, and waste pollution.</p>
+                        <hr class="mb-5">
+                        <h5>Sensors used</h5>
+                        <ul>
+                            <li>Soil moisture sensor (YL-69) → measures drought.</li>
+                            <li>  pH and turbidity sensor → measures water quality.</li>
+                            <li>  Solar sensor (BME280 + solar radiation) → optimizes solar energy.</li>
+                        <h5>NASA/FAO data</h5>
+                        <ul>
+                            <li>NASA POWER → solar radiation.</li>
+                            <li>HydroSHEDS → location of rivers and basins.</li>
+                            <li> FAO SoilGrids → soil type and fertility.</li>
+                            <h5>Simulated solution</h5>
+                            <p class="mb-5">The sensors detect areas with fertile soil and good solar radiation.
+The AI recommends building biodigesters, community solar panels, and organic gardens.</p>
+                            <h5>Result</h5>
+                            <p class="mb-5">The territory achieves basic self-sufficiency (water, energy, and food).</p>
+                            <hr class="mb-5">
+                            <h2 class="mb-5"> PHASE 2 – Developing countries</h2>
+                            <h5>Problem</h5>
+                            <p>Uncontrolled urban growth, air pollution, and loss of green areas.</p>
+                            <h5>Sensors used</h5>
+                            <ul>
+                                <li>MQ-135 / BME680 → pollutant gases (CO₂, NO₂).</li>
+                                <li>DHT22 / BME280 → temperature and humidity (heat islands).</li>
+                            </ul>
+                            <h5>Satellite NDVI (Copernicus + MODIS) → vegetation health.
+Data used</h5>
+                            <ul>
+                                <li>Copernicus Urban Atlas → land use.</li>
+                                <li> MODIS + NDVI → vegetation cover.</li>
+                                <li>HydroBASINS → watersheds and drainage.</li>
+                                <h5>Simulated Solution AI analyzes the data and recommends</h5>
+                                <ul>
+                                    <li> Planting green corridors in areas with extreme heat.</li>
+                                    <li>Implementing electric bike lanes in polluted areas.</li>
+                                    <li>Avoiding expansion on fertile agricultural land.</li>
+                                </ul>
+                                    <h5> Result</h5>
+                                    <p class="mb-5">Expansion is controlled and cities are connected to sustainable rural areas.</p>
+                                    <hr class="mb-5">
+                                    <h2 class="mb-5">PHASE 3 – Developed countries</h2>
+                                    <h5>Problem</h5>
+                                    <h6>High industrial emissions and loss of urban biodiversity.
+Sensors used</h6>
+                                    <ul>
+                                        <li>Sentinel-5 and IoT stations → CO₂ and NOx measurement.</li>
+                                        <li>MLX90614 (infrared) → surface temperature.</li>
+                                        <li>NDVI and MODIS → forest change.</li>
+                                    </ul>
+                                    <br>
+                                    <h5>Geoscientific data</h5>
+                                    <ul>
+                                        <li>NASA Earthdata + Copernicus Climate Data Store → emissions and climate.</li>
+                                        <li>GEO → global Earth observation information.Simulated solution</li>
+                                    </ul>
+                                    <br>
+                                    <h5>AI recommends</h5>
+                                    <ul>
+                                        <li>Restoring urban ecosystems with reforestation and green roofs.</li>
+                                        <li>Promoting circular energy and global electric transportation.</li>
+                                        <li>Use predictive AI to plan expansion without damaging ecosystems.</li>
+                                    </ul>
+                                    <br>
+                                    <h5>Result</h5>
+                                    
+                                    <p class="mb-5">Cities become smart, green, and restorative, reducing their global impact.</p>
+                                    <h5>Role of AI in simulation</h5>
+                                    <ul>
+                                        <li>Classifies the region into a development phase (1, 2, or 3).</li>
+                                        <li> Analyzes sensor and satellite data.</li>
+                                        <li> Gives specific recommendations (energy, water, soil, air).</li>
+                                        <li>Predicts environmental risks.</li>
+                                    </ul>
+                                    <h5>Example:Colombia</h5>
+                                    <h5>Current stage: Developing country (Phase 2)Colombia is at an intermediate stage of development:</h5>
+                                    <ul>
+                                        <li> It has rapid urban growth (Bogotá, Medellín, Cali, Barranquilla).</li>
+                                        <li>It faces problems of air pollution, disorderly expansion, and forest loss.</li>
+                                        <li>At the same time, it has great biodiversity and natural resources, which represent enormous sustainable potential.</li>
+                                    </ul>
+                                <h5>Main Problems
+                                    <br>
+                                </h5>
+                                <ul>
+                                    <li>Unplanned urban expansion → loss of green and agricultural areas.</li>
+                                    <li> Air and water pollution in large cities.</li>
+                                    <li> Deforestation in the Amazon and rural areas.</li>
+                                    <li>Lack of integration of national environmental data (each city measures differently).</li>
+                                </ul>
+                                <br>
+                                <h5>How it could progress to a higher stage (Phase 3 – developed and sustainable country)</h5>
+                                <h6>Creating a national network of sensorsPlace environmental and smart sensors throughout the country</h6>
+                                <ul>
+                                    <li> Air: MQ-135, BME680 to measure CO₂ and polluting gases.</li>
+                                    <li> Water and soil: pH, humidity, turbidity, TDR sensors.</li>
+                                    <li>Climate: DHT22, BME280, rain gauges, and IoT stations.</li>
+                                    <li>Vegetation: NDVI sensors (via satellite and drones).</li>
+
+                                </ul>
+                                <h5>Application</h5>
+                                <p class="mb-5">The data is uploaded to a national platform (“Vía de Datos Colombia”) that any citizen, school, or researcher can consult.</p>
+                                <h5>Connecting urban and rural areas with data</h5>
+                                <ul>
+                                    <li> In rural areas, soil and climate sensors would help farmers decide when to plant or irrigate.</li>
+                                    <li> In cities, air and noise sensors would identify areas that need more trees or traffic restrictions.</li>
+                                    <li>This creates a “living network of environmental information” between the countryside and the city.</li>
+                                </ul>
+                                <br>
+                                <h5>Incorporating artificial intelligence (AI)AI would analyze data in real time to detect patterns, predict risks, and recommend actions.Contributions of AI:</h5>
+                                <ul>
+                                    <li>Detect areas at risk of flooding or landslides.</li>
+                                    <li> Predict pollution levels based on weather or traffic.</li>
+                                    <li> Suggest green urban strategies (planting trees, locating bike lanes, building parks).</li>
+                                    
+                                </ul>
+                                <br><h5>Optimize energy and water use in cities and crops.Practical example:</h5>
+                                <p class="mb-5">If sensors show that Medellín has high pollution and heat, AI could recommend increasing green roofs and limiting traffic at certain times.</p>
+                            <h5>Move toward a “smart city and countryWith this data, Colombia could:</h5>
+                            <ul>
+                                <li>Integrate sustainable urban policies.</li>
+                                <li> Create healthy human settlements (better air, less heat, more clean water).</li>
+                                <li> Monitor its progress with real-time environmental indicators.</li>
+                            </ul>
+                            <br>
+                            <h2 class="mb-5">Simulation: Data pathways to healthy cities and human settlements</h2>
+                            <h5>Scenario</h5>
+                            <p class="mb-5">The year is 2035.
+Colombia is facing uncontrolled urban expansion in the center of the country. Local leaders are looking for a sustainable location to build a new human settlement that guarantees well-being and environmental balance.</p>
+                            <h5>Stage 1: Data collection</h5>
+                            <p class="mb">A group of environmental, scientific, and community leaders activates a network of sensors connected to a national platform called “Vía de Datos Colombia” (Colombia Data Path).
+The sensors collect information from the south of the country:</p>
+                            <ol>
+                                <h5>Sensor type</h5>
+                                <li>Soil moisture sensor (TDR)</li>
+                                <li>pH and turbidity sensor</li>
+                                <li>BME280 + DHT22</li>
+                                <li>NDVI (satélite MODIS)</li>
+                                <li>Sensor de gases (MQ-135)</li>
+                            </ol>
+                            <ol>
+                                <h5>What it measures</h5>
+                                <li>Groundwater level</li>
+                                <li>River water quality</li>
+                                <li>Ambient temperature, pressure, and humidity</li>
+                                <li>Vegetation and green cover</li>
+                                <li>Air pollution</li>
+                            </ol>
+                            <ol>
+                                <h5>Result</h5>
+                                <li>High humidity, fertile soil </li>
+                                <li>Clean and stable water </li>
+                                <li>Stable and cool climate </li>
+                                <li>High plant density</li>
+                                <li>Aire limpio y bajo CO₂ </li>
+                            </ol>
+                            <br>
+                            <h5>Stage 2: AI Analysis The platform's artificial intelligence analyzes all the data and generates a report:</h5>
+                            <p class="mb-5">"Southern area with optimal conditions for sustainable settlement:
+fertile soil, abundant water, low pollution, and thermal balance.
+Recommendation: build a model community for green energy and regenerative agriculture."</p>
+                            <h5>Stage 3: Leaders' Decision</h5>
+                            <p class="mb-5">Community and urban leaders call a national meeting.
+With the data in hand, they decide to move south to found a new healthy human settlement.</p>
+                            <h5>The plan includes:</h5>
+                            <ul>
+                                <li> Bioclimatic buildings (using ventilation and solar energy).</li>
+                                <li>Community gardens monitored with soil sensors.</li>
+                                <li>Technology schools that teach young people to read and analyze environmental data.</li>
+                                <li>IoT stations connected to the national network to continue monitoring the environment.</li>
+                            </ul>
+                            <br>
+                            <h5>Stage 4: Results and progress
+After five years, the southern zone becomes a model sustainable city:</h5>
+                            <ul>
+                                <li>Clean air </li>
+                                <li>  Fertile and productive soil </li>
+                                <li>Solar and wind energy </li>
+                                <li>Citizen participation in decision-making </li>
+                            </ul>
+                            <p>Colombia thus advances from Phase 2 (developing country) to Phase 3 (sustainable country) within the global plan for data pathways to healthy cities and human settlements.</p>
+                        <h2 class="mb-5">Final Message</h2>
+                        <p>"When leaders make decisions based on real data and not just intuition, human settlements become healthy, sustainable, and connected to nature.
+Sensors are the eyes of the planet, and artificial intelligence is its mind."</p>                             
+
+                    </section>
+                </main>
+            </div>
+        </div>        
+
+        <div class="tm-row">
+            <div class="tm-col-left text-center">            
+                <ul class="tm-bg-controls-wrapper">
+                    <li class="tm-bg-control active" data-id="0"></li>
+                    <li class="tm-bg-control" data-id="1"></li>
+                    <li class="tm-bg-control" data-id="2"></li>
+                </ul>            
+            </div>        
+            <div class="tm-col-right tm-col-footer">
+                <footer class="tm-site-footer text-right">
+                    <p class="mb-0">Copyright 2025 Terra Nova.
+                    
+                    | Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-text-link">TemplateMo</a></p>
+                </footer>
+            </div>  
+        </div>
+
+        <!-- Diagonal background design -->
+        <div class="tm-bg">
+            <div class="tm-bg-left"></div>
+            <div class="tm-bg-right"></div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
+</body>
+</html>
